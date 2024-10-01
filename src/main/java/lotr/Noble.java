@@ -4,7 +4,7 @@ import java.util.Random;
 // уникнення дублювання коду
 public class Noble extends Character{
     public Noble(int min, int max){
-        super(new Random().nextInt(min, max), new Random().nextInt(min, max));
+        super(new Random().nextInt(max - min) + min, new Random().nextInt(max - min) + min);
     }
 
     @Override
